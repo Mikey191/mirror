@@ -1,0 +1,38 @@
+@media (max-width: 1200px) {
+  video {
+    max-width: 1200px;
+  }
+  .block__inner {
+    flex-direction: column;
+  }
+  .block__inner:nth-child(1) {
+    align-items: center;
+  }
+  .inner__img {
+    width: 80vw;
+    height: auto;
+  }
+}
+
+@media (max-width: 750px) {
+  video {
+    display: none;
+  }
+  .mirror__content {
+    width: 100vw;
+    height: 100vh;
+    background: #fcf3f3f5;
+  }
+  .mirror__text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .mirror__title {
+    font-size: 70px;
+  }
+  .mirror__text {
+    text-align: center;
+  }
+}

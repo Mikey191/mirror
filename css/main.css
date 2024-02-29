@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Russo-h";
+}
+
+html,
+body {
+  width: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex-grow: 1;
+}
+
+body {
+  background-image: url("../img/bg.jpg");
+  /* для того что бы сделать зерно поменьше */
+  background-size: 50px;
+  color: #fafafa;
+  font-family: "SourceCodePro";
+  font-weight: 300;
+  font-size: 30px;
+}
+.container {
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.home {
+  width: 100vw;
+  height: 100vh;
+}
+/* Блок mirror */
+.home__img {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.3;
+}
+.mirror__content {
+  /* для выравнивания элемента по центу с position absolute */
+  position: absolute;
+  z-index: 3;
+
+  /* так */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  width: 50vw;
+  height: 50vh;
+
+  color: black;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: invert(100%) blur(5px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+  padding: 80px;
+
+  opacity: 1;
+
+  transform-style: preserve-3d;
+}
+.mirror__title {
+  font-size: 100px;
+  text-transform: uppercase;
+}
+.mirror__text {
+  text-transform: uppercase;
+  margin-bottom: 5vh;
+}
+.mirror__btn {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background: #fff;
+  color: #000;
+  border-radius: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+/* Конец блока Mirror */
+.block {
+  padding: 10vh 0;
+}
+.block__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 10vw;
+}
+.inner__content {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  gap: 2vh;
+  align-items: start;
+  justify-content: center;
+}
+.inner__img {
+  width: 39vw;
+  height: 40vh;
+}
+.content__title {
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.content__text {
+  text-transform: lowercase;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10vh 0;
+}
+.footer__title {
+  font-weight: 400;
+  font-size: 20px;
+}
+.footer__contacts a {
+  font-size: 20px;
+  color: #fff;
+  opacity: 0.9;
+}
+
+/* добавить все элементы через запятую, у который появляется свойство will-change */
+.home,
+.inner__img,
+.inner__content {
+  will-change: transform;
+}
+
+/* Секция Home video */
+
+/* media */

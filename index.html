@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/fontello.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <script src="./js/mainBlock.js" defer></script>
+    <script src="./libs/gsap/gsap.min.js" defer></script>
+    <script src="./libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="./libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="./libs/gsap/ScrollToPlugin.min.js" defer></script>
+    <script src="./js/app.js" defer></script>
+    <meta
+      name="description"
+      content="Создайте качественные сайты с помощью нашей профессиональной команды. Мы предлагаем широкий спектр услуг по разработке, продвижению и веб-дизайну сайтов. У нас вы найдете индивидуальный подход к каждому проекту и гарантированные результаты. Посетите наш сайт и узнайте больше о том, как мы можем помочь вам достичь ваших целей в онлайн-бизнесе."
+    />
+    <title>Mirror: Сайт - отражение вашего бизнеса</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <section data-speed="0.75" class="home">
+          <div class="mirror__content">
+            <h2 class="mirror__title">MIRR&lt;/&gt;R</h2>
+            <p class="mirror__text">Студия веб-разработки</p>
+            <a class="mirror__btn" href="#main">Проекты</a>
+          </div>
+
+          <img
+            src="./img/home/home_img.png"
+            alt="home image"
+            class="home__img"
+          />
+        </section>
+
+        <section id="main" class="main"></section>
+
+        <section class="footer">
+          <div class="footer__title">Сайт - отражение вашего бизнеса</div>
+          <div class="footer__contacts">
+            <a
+              href="https://www.instagram.com/mirror_dev/"
+              class="contacts__instagram"
+              target="_blank"
+              ><i class="icon-instagram"></i
+            ></a>
+            <a href="#" class="contacts__phone"><i class="icon-phone"></i></a>
+            <a href="#" class="contacts__telegram"
+              ><i class="icon-telegram"></i
+            ></a>
+          </div>
+          <p class="footer__phone">+7 927 777 17 77</p>
+        </section>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./libs/tilt/tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".mirror__content"), {
+        max: 10,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+@font-face {
+ font-family: 'Russo-h';
+ src: url("../fonts/RussoOne-Regular.ttf");
+}
+@font-face {
+  font-family: 'SourceCodePro';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local("SourceCodePro") url("../fonts/SourceCodePro-Regular.ttf") format("truetype"),
+  url("../fonts/SourceCodePro-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: 'SourceCodePro';
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: local("SourceCodePro") url("../fonts/SourceCodePro-VariableFont_wght.ttf") format("truetype"),
+  url("../fonts/SourceCodePro-VariableFont_wght.woff") format("woff");
+}
+@font-face {
+  font-family: 'SourceCodePro';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: local("SourceCodePro") url("../fonts/SourceCodePro-Medium.ttf") format("truetype"),
+  url("../fonts/SourceCodePro-Medium.woff") format("woff");
+}
